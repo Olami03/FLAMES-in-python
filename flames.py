@@ -9,8 +9,8 @@ print('''
 # Author = coderatul
 user = input("enter your name :").casefold()
 anotherperson = input("enter another person's name :").casefold()
-assert user.isalpha(),"name should only contain alphabets"
-assert anotherperson.isalpha(),"name should only contain alphabets"
+assert user.isalpha(),"excuse me : ------name should only contain alphabets------"
+assert anotherperson.isalpha(),"excuse me :  ------name should only contain alphabets------"
 if user == anotherperson:
   print("you are already in love with your self")
 else:
