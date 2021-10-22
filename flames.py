@@ -7,17 +7,18 @@ print('''
 ╚═╝░░░░░╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░    
 ''')
 # Author = coderatul
-user = input("enter your name :").casefold().strip()
-anotherperson = input("enter another person's name :").casefold().strip()
-assert user.isalpha(),"excuse me : ------name should only contain alphabets------"
-assert anotherperson.isalpha(),"excuse me :  ------name should only contain alphabets------"
+# Taking names as input from user
+user = input("Enter your name :").casefold().strip()
+anotherperson = input("Enter another person's name :").casefold().strip()
+assert user.isalpha(),"Excuse me : ------name should only contain alphabets------"
+assert anotherperson.isalpha(),"Excuse me :  ------name should only contain alphabets------"
 if user == anotherperson:
-  print("you are already in love with your self")
+  print("You are already in love with your self")
 else:
   a = (len(user)+len(anotherperson) - len(set(user)&set(anotherperson)) * 2 )
-  flames = {1:"siblings",2:"enemies",3:"enemies",4:"enemies",5:"friends",
-            6:"going to marry each other",7:"enemies",8:"in affection",9:"enemies",
-            10:"in Love",11:"going to marry each other",12:"in affection",
-            13:"siblings",14:"friends",15:"going to marry each other",16:"friends",
-            17:"siblings",18:"friends",19:"siblings",20:"enemies"}
-  print("according to FLAMES you and",anotherperson,"are:",flames[a])
+  flames = {1:"Siblings",2:"Enemies",3:"Enemies",4:"Enemies",5:"Friends",
+            6:"Going to marry each other",7:"Enemies",8:"In affection",9:"Enemies",
+            10:"In Love",11:"Going to marry each other",12:"In affection",
+            13:"Siblings",14:"Friends",15:"Going to marry each other",16:"Friends",
+            17:"Siblings",18:"Friends",19:"Siblings",20:"Enemies"}
+  print("According to FLAMES you and",anotherperson,"are:",flames[a])
