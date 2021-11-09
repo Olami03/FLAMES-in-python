@@ -1,12 +1,3 @@
-#printing banner
-print('''
-███████╗██╗                 █████╗   ███╗         ███╗███████╗███████╗
-██╔════╝██║              ██╔══██╗████╗   ████║██╔════╝██╔════╝
-█████╗      ██║              ███████║██╔████╔██║█████╗     ███████╗
-██╔══╝      ██║              ██╔══██║██║╚██╔╝██║██╔══╝     ╚════██║
-██║              ███████╗██║      ██║██║ ╚═╝     ██║███████╗███████║
-╚═╝             ╚══════╝╚═╝      ╚═╝╚═╝               ╚═╝╚══════╝╚══════╝
-''')
 user = input("Enter your name :").casefold().replace(" ", "")
 anotherperson = input("Enter another person's name :").casefold().replace(" ", "")
 assert user.isalpha(),"------name should only contain alphabets------"
