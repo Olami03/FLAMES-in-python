@@ -1,3 +1,13 @@
+print("""
+(                               
+ )\ )  (                         
+(()/(  )\    )     )      (      
+ /(_))((_)( /(    (      ))\ (   
+(_))_| _  )(_))   )\  ' /((_))\  
+| |_   | |((_)_  _((_)) (_)) ((_) 
+| __| | | / _` | | '  \/  |/ -_) (_-< 
+|_|    |_|\__,_||_|_|_| \___|/__/ 
+""")
 user = input("Enter your name :").casefold().replace(" ", "")
 anotherperson = input("Enter another person's name :").casefold().replace(" ", "")
 assert user.isalpha(),"------name should only contain alphabets------"
