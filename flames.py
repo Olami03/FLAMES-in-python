@@ -15,11 +15,7 @@ assert user.isalpha(),"------name should only contain alphabets------"
 assert anotherperson.isalpha(),"------name should only contain alphabets------"
 
 #converting str to list
-chrs_of_user,chrs_of_anotherperson= [],[]
-for i in user:
-  chrs_of_user.append(i)
-for j in anotherperson:
-  chrs_of_anotherperson.append(j)
+chrs_of_user,chrs_of_anotherperson=list(user),list(anotherperson)
 
 #making copy of list(user) and list(anotherperson)
 duplicate_list_user = chrs_of_user.copy()
